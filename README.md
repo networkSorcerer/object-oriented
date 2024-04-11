@@ -1,4 +1,5 @@
 # object-oriented
+# 객체 지향 프로그래밍
 ![java](https://github.com/networkSorcerer/object-oriented/assets/155520035/d221aef6-d3a1-4c48-903e-a69f7aea2e05)
 ![이클립스](https://github.com/networkSorcerer/object-oriented/assets/155520035/57fdd3ab-4790-4813-9742-5c8c5d0fdfef)
 
@@ -17,5 +18,5 @@
 - 이 과정을 클래스 로딩이라 하며 JVM의 클래스 로더 서브 시스템이 담당
 - 클래스 로더 서브 시스템을 줄여서 클래스 로더라 부름
 - 동적 로딩 : 프로그램을 실행하는 도중에 새로운 클래스를 로딩할 수 있음
-   -- 로드 타임 동적 로딩 : 프로그램 실행 초기에 클래스를 로딩하는 것
-   -- 런타임 동적 로딩 : 프로그램 실행 중간에도 클래스를 로딩하는 것
+     로드 타임 동적 로딩 : 프로그램 실행 초기에 클래스를 로딩하는 것
+     런타임 동적 로딩 : 프로그램 실행 중간에도 클래스를 로딩하는 것
