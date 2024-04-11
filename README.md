@@ -93,4 +93,67 @@ Car myCar = new Car();
 - 메소드는 클래스 내.외부의 호출에 의해 실행
 - 클래스 내부 : 메소드 이름으로 호출
 - 클래스 외부 : 객체 생성후 , 참조 변수를 이용해 호출
-- 
+
+```java
+package exam_class_basic;
+
+public class Car {
+	//필드 정의
+	public int speed; //속도
+	public int gear; // 기어 단수
+	public String color; // 색상
+	
+	//전체 필드의 값 대입
+	public void carData(int s, int g, String c) {
+		//필드에 값 설정
+		speed = s;
+		gear = g;
+		color = c;
+	}
+	
+	public void speedUp(int s) {
+		speed += s;
+	}
+	
+	public void speedDown(int s ) {
+		speed -= s;
+	}
+	
+	public void printData() {
+		//객체의 상태를 문자열로 출력하는 메소드
+		System.out.println("속도:" + speed +"  기어 : " + gear + "  색상 : " + color ) ;
+	}
+	
+	public String toString() {
+		//객체의 상태를 문자열로 반환하는 메소드
+		return "속도 : " + speed + " 기어 : " + gear + "색상 : " + color;
+	}
+	
+	
+}
+```
+
+```java
+package exam_class_basic;
+
+public class CarTest {
+	public static void main(String [] args) {
+		Car myCar = new Car();
+		
+		myCar.carData(0, 1, "red");
+		
+		myCar.speedUp(20);
+		myCar.printData();
+		System.out.println(myCar.toString());
+		System.out.println();
+		
+		Car yourCar = new Car();
+		
+		yourCar.carData(30, 3, "blue");
+		
+		yourCar.speedDown(10);
+		yourCar.printData();
+		System.out.println(yourCar.toString());
+	}
+}
+```
